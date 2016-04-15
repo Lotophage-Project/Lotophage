@@ -9,6 +9,7 @@ python:
   - "3.5"
 install:
   - "pip install --upgrade --requirement requirements.txt"
-  - "pip install --upgrade coverage flake8"
+  - "pip install --upgrade coverage flake8 isort"
 script:
-  - "flake8 lotophage"
+  - "flake8 manage.py lotophage/lotophage_server"
+  - "isort --check-only --recursive lotophage/lotophage_server"

@@ -1,0 +1,11 @@
+{
+  "name": "lotophage",
+  "private": true,
+  "scripts": {
+    "prepublish": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bower": "~1.7.9"
+  }
+}
